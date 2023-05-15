@@ -46,6 +46,7 @@
         <module>../wjysky-components</module>
         <module>../wjysky-biz-comm</module>
         <module>../wjysky-framework</module>
+        <module>../wjysky-bizbasic-group</module>
     </modules>
 
     <dependencyManagement>

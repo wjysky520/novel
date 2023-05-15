@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: novel-auth
+  profiles:
+    active: @profiles.active@

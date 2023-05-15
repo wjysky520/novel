@@ -1,0 +1,18 @@
+server:
+  port: 9902
+  name: novel-system
+  servlet:
+    context-path: /novel-system
+
+eureka:
+  instance:
+    instance-id: ${server.name}
+    hostname: localhost
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+
+log:
+  path: D:/logs/novel-system
