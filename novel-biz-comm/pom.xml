@@ -4,26 +4,30 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.wjysky</groupId>
-        <artifactId>wjysky-parent</artifactId>
+        <artifactId>novel-parent</artifactId>
         <version>1.1.0</version>
-        <relativePath>../wjysky-parent/pom.xml</relativePath>
+        <relativePath>../novel-parent/pom.xml</relativePath>
     </parent>
-    <groupId>com.wjysky</groupId>
     <artifactId>novel-biz-comm</artifactId>
     <version>1.0.0</version>
-    <name>novel-biz-comm</name>
-    <description>Demo project for Spring Boot</description>
-    <properties>
-        <java.version>8</java.version>
-    </properties>
-    <dependencies>
-        <!-- lombok S -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.8</version>
-            <scope>provided</scope>
-        </dependency>
-        <!-- lombok E -->
-    </dependencies>
+    <description>公共组件</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>novel-bizcomm-auth</module>
+        <module>novel-bizcomm-system</module>
+        <module>novel-bizcomm-file</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- 项目依赖 start -->
+            <dependency>
+                <groupId>com.wjysky</groupId>
+                <artifactId>novel-comm</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <!-- 项目依赖 end -->
+        </dependencies>
+    </dependencyManagement>
 </project>

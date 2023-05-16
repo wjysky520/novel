@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.wjysky</groupId>
-        <artifactId>wjysky-parent</artifactId>
+        <artifactId>novel-parent</artifactId>
         <version>1.1.0</version>
-        <relativePath>../wjysky-parent/pom.xml</relativePath>
+        <relativePath>../novel-parent/pom.xml</relativePath>
     </parent>
     <artifactId>novel-components</artifactId>
     <version>1.0.0</version>
