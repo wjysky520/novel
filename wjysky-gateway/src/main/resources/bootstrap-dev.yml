@@ -1,13 +1,14 @@
 spring:
   application:
-    name: wjysky-gateway
+    name: novel-gateway
   cloud:
     nacos:
       config:
         # 配置中心的地址
         server-addr: nacos.wjysky.com
+        namespace: e091fe26-2f07-420d-a8da-d277efa0c1fd
         ext-config[0]:
           file-extension: yaml
           group: ${spring.profiles.active}
-          data-id: wjysky-gateway-${spring.profiles.active}.yaml
+          data-id: novel-gateway-${spring.profiles.active}.yaml
           refresh: true

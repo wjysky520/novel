@@ -1,6 +1,6 @@
 server:
   port: 8761
-  name: wjysky-eureka
+  name: novel-eureka
 
 eureka:
   server:
@@ -17,4 +17,4 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
 
 log:
-  path: D:/logs/game-eureka
+  path: D:/logs/novel-eureka

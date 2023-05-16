@@ -1,6 +1,6 @@
 server:
   port: 8000
-  name: wjysky-gateway
+  name: novel-gateway
 
 eureka:
   instance:
@@ -21,18 +21,18 @@ spring:
           enabled: true
       routes:
         # 集成eureka注册中心的配置
-        - id: game-center
-          uri: lb://GAME-CENTER
+        - id: novel-auth
+          uri: lb://NOVEL-AUTH
           predicates:
-            - Path=/game-center/**
+            - Path=/novel-auth/**
           filters:
             - StripPrefix=0
-        - id: game-service
-          uri: lb://GAME-SERVICE
+        - id: novel-system
+          uri: lb://NOVEL-SYSTEM
           predicates:
-            - Path=/game-service/**
+            - Path=/novel-system/**
           filters:
             - StripPrefix=0
 
 log:
-  path: D:/logs/game-gateway
+  path: D:/logs/novel-gateway

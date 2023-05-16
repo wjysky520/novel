@@ -5,7 +5,7 @@
     <!-- 配置文件加载顺序为：logback.xml —> application.properties —> logback-spring.xml，如果直接通过${参数key}的形式是无法获取到对应的参数值 -->
     <!-- source指定的是application.yml配置文件中key，其它地方直接用${log.path}引用这个值 -->
     <!-- 解决在相对路径下生成log.path_IS_UNDEFINED的问题，增加defaultValue -->
-    <springProperty scope="context" name="log.home" source="log.path" defaultValue="D://logs"/>
+    <springProperty scope="context" name="log.home" source="log.path" defaultValue="D://logs//novel-auth"/>
 
     <!-- app.name根据你的应用名称修改 -->
     <springProperty scope="context" name="app.name" source="spring.application.name" defaultValue="novel-auth"/>
