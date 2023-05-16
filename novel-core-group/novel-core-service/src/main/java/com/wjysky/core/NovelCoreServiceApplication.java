@@ -1,4 +1,4 @@
-package com.wjysky.auth;
+package com.wjysky.core;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
@@ -7,10 +7,10 @@ import org.springframework.core.env.ConfigurableEnvironment;
 
 @SpringBootApplication
 @Slf4j
-public class WjyskyAuthServiceApplication {
+public class NovelCoreServiceApplication {
 
     public static void main(String[] args) {
-        ConfigurableEnvironment env = SpringApplication.run(WjyskyAuthServiceApplication.class, args).getEnvironment();
+        ConfigurableEnvironment env = SpringApplication.run(NovelCoreServiceApplication.class, args).getEnvironment();
         String serviceName = env.getProperty("spring.application.name"); // 服务名称
         String servicePort = env.getProperty("server.port"); // 服务端口
         String[] serviceActive = env.getActiveProfiles(); // 运行环境

@@ -47,6 +47,7 @@
         <module>../novel-biz-comm</module>
         <module>../novel-framework</module>
         <module>../novel-bizbasic-group</module>
+        <module>../novel-core-group</module>
     </modules>
 
     <dependencyManagement>

@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: novel-core
+  profiles:
+    active: @profiles.active@

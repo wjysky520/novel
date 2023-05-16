@@ -7,10 +7,10 @@ import org.springframework.core.env.ConfigurableEnvironment;
 
 @SpringBootApplication
 @Slf4j
-public class WjyskySystemServiceApplication {
+public class NovelSystemServiceApplication {
 
     public static void main(String[] args) {
-        ConfigurableEnvironment env = SpringApplication.run(WjyskySystemServiceApplication.class, args).getEnvironment();
+        ConfigurableEnvironment env = SpringApplication.run(NovelSystemServiceApplication.class, args).getEnvironment();
         String serviceName = env.getProperty("spring.application.name"); // 服务名称
         String servicePort = env.getProperty("server.port"); // 服务端口
         String[] serviceActive = env.getActiveProfiles(); // 运行环境
