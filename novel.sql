@@ -11,8 +11,20 @@ CREATE TABLE user_info(
   email VARCHAR(128) COMMENT '邮箱',
   avatar_file_id BIGINT COMMENT '用户头像文件ID，对应file_info表主键',
   deleted TINYINT NOT NULL DEFAULT 0 COMMENT '是否删除，0-未删除，1-已删除',
-  update_at BIGINT NOT NULL COMMENT '更新时间',
-  create_at BIGINT NOT NULL COMMENT '创建时间',
+  update_at TIMESTAMP NOT NULL COMMENT '更新时间',
+  create_at TIMESTAMP NOT NULL COMMENT '创建时间',
+  UNIQUE(tel)
+) COMMENT = '用户信息表';
+
+CREATE TABLE sys_dic(
+  id BIGINT NOT NULL PRIMARY KEY,
+  `name` VARCHAR(64) NOT NULL COMMENT '字典名称',
+  `type` VARCHAR(64) NOT NULL COMMENT '字典分类',
+  nid VARCHAR(256) NOT NULL COMMENT '字典唯一标识',
+  `value` VARCHAR(512) COMMENT '字典值',
+  deleted TINYINT NOT NULL DEFAULT 0 COMMENT '是否删除，0-未删除，1-已删除',
+  update_at TIMESTAMP NOT NULL COMMENT '更新时间',
+  create_at TIMESTAMP NOT NULL COMMENT '创建时间',
   UNIQUE(tel)
 ) COMMENT = '用户信息表';
 
