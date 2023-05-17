@@ -18,7 +18,7 @@
     <dependencies>
         <dependency>
             <groupId>com.wjysky</groupId>
-            <artifactId>wjysky-framework-mvc</artifactId>
+            <artifactId>novel-framework-mvc</artifactId>
             <version>1.0.0</version>
         </dependency>
     </dependencies>

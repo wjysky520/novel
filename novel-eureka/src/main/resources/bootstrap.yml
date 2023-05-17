@@ -1,6 +1,6 @@
 spring:
   application:
-    name: wjysky-eureka
+    name: novel-eureka
   profiles:
     active: @profiles.active@
 #  cloud:
