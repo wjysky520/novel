@@ -33,6 +33,18 @@ spring:
             - Path=/novel-system/**
           filters:
             - StripPrefix=0
+        - id: novel-file
+          uri: lb://NOVEL-FILE
+          predicates:
+            - Path=/novel-file/**
+          filters:
+            - StripPrefix=0
+        - id: novel-core
+          uri: lb://NOVEL-CORE
+          predicates:
+            - Path=/novel-core/**
+          filters:
+            - StripPrefix=0
 
 log:
   path: D:/logs/novel-gateway
