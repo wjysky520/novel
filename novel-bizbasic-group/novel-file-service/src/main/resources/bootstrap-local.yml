@@ -16,3 +16,7 @@ eureka:
 
 log:
   path: D:/logs/novel-auth
+
+file:
+  tool: minio
+  path: D:/other/novel/file

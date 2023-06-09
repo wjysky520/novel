@@ -52,6 +52,12 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>5.8.15</version>
+		</dependency>
 		<!-- 其他核心工具包 end -->
 
 		<dependency>
@@ -118,6 +124,13 @@
 			<artifactId>jackson-annotations</artifactId>
 		</dependency>
 		<!-- jackson E -->
+
+		<!-- 参数校验 S -->
+		<dependency>
+			<groupId>jakarta.validation</groupId>
+			<artifactId>jakarta.validation-api</artifactId>
+		</dependency>
+		<!-- 参数校验 E -->
 	</dependencies>
 
 	<build>

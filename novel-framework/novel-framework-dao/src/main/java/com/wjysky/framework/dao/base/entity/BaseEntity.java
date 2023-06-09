@@ -23,7 +23,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class BaseEntity {
-     /**
+    /**
      * 主键id
      */
     @TableId("id")

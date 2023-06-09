@@ -5,6 +5,7 @@ import io.minio.*;
 import io.minio.http.Method;
 import lombok.extern.slf4j.Slf4j;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.InputStream;
 
@@ -72,6 +73,10 @@ public class MinioUtil {
         }
     }
 
+    public String uploadFile(String fileName, byte[] bytes, long fileSize) throws Exception {
+        return uploadFile(fileName, new ByteArrayInputStream(bytes), bytes.length);
+    }
+
     /**
      * @bizName 上传文件
      *
@@ -85,7 +90,6 @@ public class MinioUtil {
      * @return String
      **/
     public String uploadFile(String fileName, InputStream ins, long fileSize) throws Exception {
-        init();
         PutObjectArgs.Builder putObjectArgsBuilder = PutObjectArgs.builder().bucket(bucket)
                 .object(fileName).stream(ins, fileSize, 5 * 1024 * 1024); // minio存储分片除最后一片外其余分片最小限制为5MB
         ObjectWriteResponse response = client.putObject(putObjectArgsBuilder.build());
@@ -103,7 +107,6 @@ public class MinioUtil {
      * @return java.io.InputStream
      **/
     public InputStream downloadFile(String fileName) throws Exception {
-        init();
         GetObjectArgs.Builder getObjectArgsBuilder = GetObjectArgs.builder().bucket(bucket).object(fileName);
         return client.getObject(getObjectArgsBuilder.build());
     }
@@ -120,7 +123,6 @@ public class MinioUtil {
      * @return java.lang.String
      **/
     public String getMinioURL(String fileName, int expTime) throws Exception {
-        init();
         //生成的预签名url可访问的有效时间，最大期限7天
         GetPresignedObjectUrlArgs build = GetPresignedObjectUrlArgs.builder().method(Method.GET).bucket(bucket).object(fileName).expiry(expTime).build();
         return client.getPresignedObjectUrl(build);

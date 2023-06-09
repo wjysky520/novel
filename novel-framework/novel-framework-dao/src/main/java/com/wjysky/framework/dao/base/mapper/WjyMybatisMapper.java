@@ -41,14 +41,13 @@ public interface WjyMybatisMapper<T> extends BaseMapper<T> {
     }
 
     /**
+     * @param dataList 批量插入的数据集合
+     * @return java.lang.Integer
      * @bizName 批量插入
-     *
      * @title insertBatchSomeColumn
      * @apiNote insertBatchSomeColumn方法是利用foreach标签拼接SQL实现的，使用时需注意不要超出执行的上限条数
-     * @param dataList 批量插入的数据集合
      * @author 王俊元（wangjunyuan@talkweb.com.cn）
      * @date 2022/12/10 0:42
-     * @return java.lang.Integer
      **/
     Integer insertBatchSomeColumn(List<T> dataList);
 }

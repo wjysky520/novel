@@ -1,6 +1,6 @@
 package com.wjysky.utils;
 
-import com.wjysky.pojo.DataApi;
+import com.wjysky.pojo.ResultApi;
 import io.netty.buffer.ByteBuf;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.http.util.TextUtils;
@@ -810,7 +810,7 @@ public class ObjectUtil {
      * @Date 2019-07-04 14:35
      * @return String
      **/
-    public static DataApi sendMsgByTCP(String ip, int port, String msg, String charset) {
+    public static ResultApi sendMsgByTCP(String ip, int port, String msg, String charset) {
         try {
             // 向指定的IP端口建立连接
             Socket s = new Socket(ip, port);
@@ -827,11 +827,11 @@ public class ObjectUtil {
             String c = new String(buf,0,len);
             // 关闭连接
             s.close();
-            return DataApi.generateSuccessMsg(1, "发送成功", c);
+            return ResultApi.generateSuccessMsg(1, "发送成功", c);
         } catch (Exception e) {
             logger.error("通过TCP向[" + ip + ":" + port + "]发送信息时异常，发送内容为：" + msg, e);
         }
-        return DataApi.generateFailMsg(1, "发送失败");
+        return ResultApi.generateFailMsg(1, "发送失败");
     }
 
     /**

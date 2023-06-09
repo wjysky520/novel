@@ -7,5 +7,5 @@ package com.wjysky.file.service;
  * @date 2023-05-17 11:22:08
  * @apiNote
  */
-public interface IMinioService {
+public interface IFileService {
 }

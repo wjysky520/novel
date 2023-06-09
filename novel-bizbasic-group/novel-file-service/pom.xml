@@ -16,6 +16,13 @@
         <java.version>8</java.version>
     </properties>
     <dependencies>
+            <!-- 项目依赖 start -->
+            <dependency>
+                <groupId>com.wjysky</groupId>
+                <artifactId>novel-comm</artifactId>
+            </dependency>
+            <!-- 项目依赖 end -->
+
         <dependency>
             <groupId>com.wjysky</groupId>
             <artifactId>novel-framework-mvc</artifactId>
@@ -23,7 +30,17 @@
         </dependency>
         <dependency>
             <groupId>com.wjysky</groupId>
+            <artifactId>novel-framework-ioc</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.wjysky</groupId>
             <artifactId>novel-components-minio</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.wjysky</groupId>
+            <artifactId>novel-bizcomm-file</artifactId>
             <version>1.0.0</version>
         </dependency>
     </dependencies>

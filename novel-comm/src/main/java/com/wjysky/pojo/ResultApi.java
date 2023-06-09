@@ -12,7 +12,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class DataApi<T> {
+public class ResultApi<T> {
 
     private static final boolean SUCCESS = true;
 
@@ -34,8 +34,8 @@ public class DataApi<T> {
 
     private long systemTime; // 当前系统时间戳
 
-    public static <T> DataApi<T> generateFailMsg(int code, String msg){
-        DataApi api = new DataApi();
+    public static <T> ResultApi<T> generateFailMsg(int code, String msg){
+        ResultApi api = new ResultApi();
         api.setResult(FAIL);
         api.setCode(code);
         api.setMsg(msg);
@@ -43,8 +43,8 @@ public class DataApi<T> {
         return api;
     }
 
-    public static <T> DataApi<T> generateSuccessMsg(){
-        DataApi api = new DataApi();
+    public static <T> ResultApi<T> generateSuccessMsg(){
+        ResultApi api = new ResultApi();
         api.setResult(SUCCESS);
         api.setCode(SUCCESS_CODE);
         api.setMsg("处理成功");
@@ -52,8 +52,8 @@ public class DataApi<T> {
         return api;
     }
 
-    public static <T> DataApi<T> generateSuccessMsg(String msg){
-        DataApi api = new DataApi();
+    public static <T> ResultApi<T> generateSuccessMsg(String msg){
+        ResultApi api = new ResultApi();
         api.setResult(SUCCESS);
         api.setCode(SUCCESS_CODE);
         api.setMsg(msg);
@@ -61,8 +61,8 @@ public class DataApi<T> {
         return api;
     }
 
-    public static <T> DataApi<T> generateFailMsg(int code, String msg, T data){
-        DataApi api = new DataApi();
+    public static <T> ResultApi<T> generateFailMsg(int code, String msg, T data){
+        ResultApi api = new ResultApi();
         api.setResult(FAIL);
         api.setCode(code);
         api.setMsg(msg);
@@ -71,8 +71,8 @@ public class DataApi<T> {
         return api;
     }
 
-    public static <T> DataApi<T> generateSuccessMsg(int code, String msg){
-        DataApi api = new DataApi();
+    public static <T> ResultApi<T> generateSuccessMsg(int code, String msg){
+        ResultApi api = new ResultApi();
         api.setResult(SUCCESS);
         api.setCode(code);
         api.setMsg(msg);
@@ -80,8 +80,8 @@ public class DataApi<T> {
         return api;
     }
 
-    public static <T> DataApi<T> generateSuccessMsg(T data){
-        DataApi api = new DataApi();
+    public static <T> ResultApi<T> generateSuccessMsg(T data){
+        ResultApi api = new ResultApi();
         api.setResult(SUCCESS);
         api.setCode(SUCCESS_CODE);
         api.setMsg("成功");
@@ -90,8 +90,8 @@ public class DataApi<T> {
         return api;
     }
 
-    public static <T> DataApi<T> generateSuccessMsg(int code, String msg, T data){
-        DataApi api = new DataApi();
+    public static <T> ResultApi<T> generateSuccessMsg(int code, String msg, T data){
+        ResultApi api = new ResultApi();
         api.setResult(SUCCESS);
         api.setCode(code);
         api.setMsg(msg);
@@ -100,8 +100,8 @@ public class DataApi<T> {
         return api;
     }
 
-    public static <T> DataApi<T> generateExceptionMsg(){
-        DataApi api = new DataApi();
+    public static <T> ResultApi<T> generateExceptionMsg(){
+        ResultApi api = new ResultApi();
         api.setResult(FAIL);
         api.setCode(EXCEPTION_CODE);
         api.setMsg("后台繁忙，请稍后重试");
@@ -109,8 +109,8 @@ public class DataApi<T> {
         return api;
     }
 
-    public static <T> DataApi<T> generateExceptionMsg(String msg){
-        DataApi api = new DataApi();
+    public static <T> ResultApi<T> generateExceptionMsg(String msg){
+        ResultApi api = new ResultApi();
         api.setResult(FAIL);
         api.setCode(EXCEPTION_CODE);
         api.setMsg(msg);

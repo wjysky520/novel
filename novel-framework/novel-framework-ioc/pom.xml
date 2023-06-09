@@ -4,26 +4,17 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.wjysky</groupId>
-        <artifactId>novel-biz-comm</artifactId>
+        <artifactId>novel-framework</artifactId>
         <version>1.0.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>novel-bizcomm-file</artifactId>
+    <artifactId>novel-framework-ioc</artifactId>
     <version>1.0.0</version>
-    <name>novel-bizcomm-file</name>
-    <description>认证服务公共组件</description>
-
+    <name>novel-framework-ioc</name>
+    <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>8</java.version>
     </properties>
-
     <dependencies>
-        <!-- 项目依赖 start -->
-        <dependency>
-            <groupId>com.wjysky</groupId>
-            <artifactId>novel-comm</artifactId>
-            <version>1.1.0</version>
-        </dependency>
-        <!-- 项目依赖 end -->
     </dependencies>
 </project>

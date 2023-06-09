@@ -1,7 +1,7 @@
 package com.wjysky.file.service.impl;
 
 import com.wjysky.components.minio.utils.MinioUtil;
-import com.wjysky.file.service.IMinioService;
+import com.wjysky.file.service.IFileService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 @Service
 @Slf4j
 @RequiredArgsConstructor
-public class MinioServiceImpl implements IMinioService {
+public class MinioServiceImpl implements IFileService {
 
     private final MinioUtil minioUtil;
 }

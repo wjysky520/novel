@@ -18,6 +18,7 @@
         <module>novel-framework-dao</module>
         <module>novel-framework-mvc</module>
         <module>novel-framework-service</module>
+        <module>novel-framework-ioc</module>
     </modules>
 
     <dependencyManagement>
