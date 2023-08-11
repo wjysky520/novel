@@ -13,7 +13,7 @@ import org.springframework.util.Assert;
 /**
  * PermissionAdvice
  *
- * @author 王俊元（wangjunyuan@talkweb.com.cn）
+ * @author 王俊元（wjysky520@gmail.com）
  * @date 2023-05-11 11:14:43
  * @apiNote 权限认证切面
  */

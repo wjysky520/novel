@@ -12,7 +12,7 @@ import java.io.InputStream;
 /**
  * MinioClientUtil
  *
- * @author 王俊元（wangjunyuan@talkweb.com.cn）
+ * @author 王俊元（wjysky520@gmail.com）
  * @date 2023-03-09 16:36:13
  * @apiNote Minio存储服务客户端
  */
@@ -42,7 +42,7 @@ public class MinioUtil {
      * @title init
      * @apiNote ${todo}
      * @param
-     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+     * @author 王俊元（wjysky520@gmail.com）
      * @date 2023/3/9 16:41
      * @return void
      **/
@@ -62,7 +62,7 @@ public class MinioUtil {
      * @title makeBucket
      * @apiNote 如果指定存储桶已存在则直接使用，不存在则创建
      * @param bucket
-     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+     * @author 王俊元（wjysky520@gmail.com）
      * @date 2023/3/9 16:41
      * @return void
      **/
@@ -85,7 +85,7 @@ public class MinioUtil {
      * @param fileName 上传服务器后的文件名
      * @param ins 文件流
      * @param fileSize 文件大小
-     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+     * @author 王俊元（wjysky520@gmail.com）
      * @date 2023/3/9 16:45
      * @return String
      **/
@@ -102,7 +102,7 @@ public class MinioUtil {
      * @title downloadFile
      * @apiNote ${todo} 
      * @param fileName 服务器上的文件名，如果除存储桶还有其他路径则需带上剩余路径
-     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+     * @author 王俊元（wjysky520@gmail.com）
      * @date 2023/3/9 16:47
      * @return java.io.InputStream
      **/
@@ -118,7 +118,7 @@ public class MinioUtil {
      * @apiNote 有效期最大为7天
      * @param fileName 服务器上的文件名，如果除存储桶还有其他路径则需带上剩余路径
      * @param expTime 有效时间，单位：秒，最大为：7 * 24 * 60 * 60
-     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+     * @author 王俊元（wjysky520@gmail.com）
      * @date 2023/3/9 16:52
      * @return java.lang.String
      **/

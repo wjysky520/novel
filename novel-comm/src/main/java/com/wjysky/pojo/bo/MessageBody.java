@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 /**
  * MessageBody
  *
- * @author 王俊元（wangjunyuan@talkweb.com.cn）
+ * @author 王俊元（wjysky520@gmail.com）
  * @date 2023-02-14 15:02:15
  * @apiNote
  */

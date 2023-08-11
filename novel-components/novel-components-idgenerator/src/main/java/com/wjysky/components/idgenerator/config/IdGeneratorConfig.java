@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * IdGeneratorConfig
  *
- * @author 王俊元（wangjunyuan@talkweb.com.cn）
+ * @author 王俊元（wjysky520@gmail.com）
  * @date 2023-05-11 17:31:28
  * @apiNote ID生成器配置类
  */
@@ -24,7 +24,7 @@ public class IdGeneratorConfig {
      * @title idGenerator
      * @apiNote ${todo}
      * @param properties ID生成器配置信息
-     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+     * @author 王俊元（wjysky520@gmail.com）
      * @date 2023/5/11 17:30
      * @return com.example.components.idgenerator.IdGenerator
      **/

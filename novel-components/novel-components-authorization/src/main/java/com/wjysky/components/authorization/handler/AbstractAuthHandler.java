@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * AbstractAuthHandler
  *
- * @author 王俊元（wangjunyuan@talkweb.com.cn）
+ * @author 王俊元（wjysky520@gmail.com）
  * @date 2023-05-11 10:50:22
  * @apiNote 权限认证抽象类
  */

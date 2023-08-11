@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 /**
  * RedisUtil
  *
- * @author 王俊元（wangjunyuan@talkweb.com.cn）
+ * @author 王俊元（wjysky520@gmail.com）
  * @date 2023-03-13 16:32:37
  * @apiNote Redis缓存服务工具类
  */
@@ -24,7 +24,7 @@ public class RedisUtil {
 //     * @title hasKey
 //     * @apiNote ${todo}
 //     * @param key redis的key
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 16:23
 //     * @return boolean
 //     **/
@@ -46,7 +46,7 @@ public class RedisUtil {
 //     * @apiNote key存在则覆盖原值，默认有效时长为60秒
 //     * @param key redis的key
 //     * @param value redis的value
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 16:24
 //     * @return boolean
 //     **/
@@ -62,7 +62,7 @@ public class RedisUtil {
 //     * @param key redis的key
 //     * @param value redis的value
 //     * @param timeout 默认有效时长，单位为秒
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 16:25
 //     * @return boolean
 //     **/
@@ -79,7 +79,7 @@ public class RedisUtil {
 //     * @param value redis的value
 //     * @param timeout 默认有效时长，默认为1，当单位为秒时为60
 //     * @param unit 时间单位，默认单位为秒
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 16:26
 //     * @return boolean
 //     **/
@@ -116,7 +116,7 @@ public class RedisUtil {
 //     * @apiNote 在原有的值基础上新增字符串到末尾，返回值的长度
 //     * @param key redis的key
 //     * @param value redis的value
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 16:16
 //     * @return boolean
 //     **/
@@ -137,7 +137,7 @@ public class RedisUtil {
 //     * @title decrement
 //     * @apiNote 如果value不是Integer类型，会抛异常，如果key不存在会创建一个，默认value为0
 //     * @param key redis的key
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 17:53
 //     * @return long
 //     **/
@@ -155,7 +155,7 @@ public class RedisUtil {
 //     * @title increment
 //     * @apiNote 如果value不是Integer类型，会抛异常，如果key不存在会创建一个，默认value为0
 //     * @param key
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 17:55
 //     * @return long
 //     **/
@@ -173,7 +173,7 @@ public class RedisUtil {
 //     * @title delete
 //     * @apiNote ${todo}
 //     * @param key redis的key
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 17:07
 //     * @return boolean
 //     **/
@@ -194,7 +194,7 @@ public class RedisUtil {
 //     * @title delete
 //     * @apiNote ${todo}
 //     * @param keyList redis的key的集合
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 17:08
 //     * @return long
 //     **/
@@ -211,7 +211,7 @@ public class RedisUtil {
 //     * @title get
 //     * @apiNote key不存在返回null
 //     * @param key redis的key
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 16:49
 //     * @return java.lang.String
 //     **/
@@ -225,7 +225,7 @@ public class RedisUtil {
 //     * @title multiGet
 //     * @apiNote key不存在返回空的ArrayList
 //     * @param keyList redis的key的集合
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 16:49
 //     * @return java.util.List<java.lang.String>
 //     **/
@@ -244,7 +244,7 @@ public class RedisUtil {
 //     * @param key redis的key
 //     * @param hashKey redis中value为HashMap的key
 //     * @param hashValue redis中value为HashMap的value
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 16:18
 //     * @return boolean
 //     **/
@@ -274,7 +274,7 @@ public class RedisUtil {
 //     * @apiNote ${todo}
 //     * @param key
 //     * @param map
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 16:31
 //     * @return boolean
 //     **/
@@ -300,7 +300,7 @@ public class RedisUtil {
 //     * @title multiSet
 //     * @apiNote map的key/value对应redis的key/value，key值存在会覆盖原值
 //     * @param map 插入内容集合
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/14 9:08
 //     * @return boolean
 //     **/
@@ -324,7 +324,7 @@ public class RedisUtil {
 //     * @apiNote map的key/value对应redis的key/value，
 //     *          如果里面的所有key都不存在，则全部插入，返回true，如果其中一个在redis中已存在，全不插入，返回false
 //     * @param map 插入内容集合
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/14 9:13
 //     * @return boolean
 //     **/
@@ -346,7 +346,7 @@ public class RedisUtil {
 //     * @title entries
 //     * @apiNote ${todo}
 //     * @param key redis的key
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 17:20
 //     * @return java.util.Map<java.lang.Object,java.lang.Object>
 //     **/
@@ -364,7 +364,7 @@ public class RedisUtil {
 //     * @apiNote 如果存在该HashMap的key则获取值，没有则返回null
 //     * @param key redis的key
 //     * @param hashKey redis中value为HashMap的key
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 17:22
 //     * @return java.lang.Object
 //     **/
@@ -384,7 +384,7 @@ public class RedisUtil {
 //     * @title get
 //     * @apiNote ${todo}
 //     * @param key redis的key
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 17:22
 //     * @return java.lang.Object
 //     **/
@@ -401,7 +401,7 @@ public class RedisUtil {
 //     * @title values
 //     * @apiNote ${todo}
 //     * @param key redis的key
-//     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+//     * @author 王俊元（wjysky520@gmail.com）
 //     * @date 2023/3/16 17:28
 //     * @return java.util.List<java.lang.Object>
 //     **/

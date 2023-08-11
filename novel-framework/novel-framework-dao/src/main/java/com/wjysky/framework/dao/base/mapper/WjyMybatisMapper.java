@@ -46,7 +46,7 @@ public interface WjyMybatisMapper<T> extends BaseMapper<T> {
      * @bizName 批量插入
      * @title insertBatchSomeColumn
      * @apiNote insertBatchSomeColumn方法是利用foreach标签拼接SQL实现的，使用时需注意不要超出执行的上限条数
-     * @author 王俊元（wangjunyuan@talkweb.com.cn）
+     * @author 王俊元（wjysky520@gmail.com）
      * @date 2022/12/10 0:42
      **/
     Integer insertBatchSomeColumn(List<T> dataList);

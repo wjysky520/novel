@@ -7,7 +7,7 @@ package com.wjysky.framework.dao.config;
 /**
  * MybatisPlusConfig
  *
- * @author 王俊元（wangjunyuan@talkweb.com.cn）
+ * @author 王俊元（wjysky520@gmail.com）
  * @date 2022-12-05 18:19:10
  * @apiNote MybatisPlus配置
  */

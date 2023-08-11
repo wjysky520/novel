@@ -10,7 +10,7 @@ import redis.clients.jedis.JedisPoolConfig;
 /**
  * JedisConfig
  *
- * @author 王俊元（wangjunyuan@talkweb.com.cn）
+ * @author 王俊元（wjysky520@gmail.com）
  * @date 2023-03-17 14:36:22
  * @apiNote Redis服务配置信息
  */

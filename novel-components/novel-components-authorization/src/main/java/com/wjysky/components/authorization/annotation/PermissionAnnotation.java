@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * PermissionAnnotation
  *
- * @author 王俊元（wangjunyuan@talkweb.com.cn）
+ * @author 王俊元（wjysky520@gmail.com）
  * @date 2023-05-11 11:12:20
  * @apiNote 权限认证注解
  */
