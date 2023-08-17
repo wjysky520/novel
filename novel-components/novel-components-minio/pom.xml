@@ -16,6 +16,14 @@
         <java.version>8</java.version>
     </properties>
     <dependencies>
+        <!-- 项目依赖 start -->
+        <dependency>
+            <groupId>com.wjysky</groupId>
+            <artifactId>novel-comm</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+        <!-- 项目依赖 end -->
+
         <!-- Minio存储服务 S -->
         <dependency>
             <groupId>io.minio</groupId>

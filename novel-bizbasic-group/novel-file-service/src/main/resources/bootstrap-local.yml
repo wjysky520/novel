@@ -14,9 +14,31 @@ eureka:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:8761/eureka/
 
+thread:
+  pool:
+    upload-file:
+      # 核心线程数
+      core-pool-size: 8
+      # 最大线程数
+      max-pool-size: 40
+      # 允许线程空闲时间（单位为秒）
+      keep-alive-time: 10
+      # 工作队列容量
+      queue-capacity: 1000
+      # 线程池中任务的等待时间
+      await-termination: 60
+      # 拒绝策略
+      rejected-execution-handler: CallerRunsPolicy
+      # 用来设置线程池关闭的时候等待所有任务都完成再继续销毁其他的Bean
+      wait-complete-on-shutdown: true
+      # 线程池名称前缀
+      thread-name-prefix: Async-Upload-File-
+
 log:
   path: D:/logs/novel-auth
 
 file:
-  tool: minio
-  path: D:/other/novel/file
+  # local-本地存储，minio-minio文件存储服务，oss-阿里云OSS文件存储服务
+  server: minio
+  upload-path: D:/other/novel/file
+  download-link: http://novel.file.wjysky.com/

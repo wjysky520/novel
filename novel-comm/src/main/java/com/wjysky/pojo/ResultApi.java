@@ -18,11 +18,11 @@ public class ResultApi<T> {
 
     private static final boolean FAIL = false;
 
-    private static final int SUCCESS_CODE = 200;
+    private static final int SUCCESS_CODE = 0;
 
-    private static final int FAIL_CODE = -1;
+    private static final int FAIL_CODE = 1;
 
-    private static final int EXCEPTION_CODE = -9999;
+    private static final int EXCEPTION_CODE = 9999;
 
     private boolean result; // 返回结果
 
@@ -35,7 +35,7 @@ public class ResultApi<T> {
     private long systemTime; // 当前系统时间戳
 
     public static <T> ResultApi<T> generateFailMsg(int code, String msg){
-        ResultApi api = new ResultApi();
+        ResultApi<T> api = new ResultApi<T>();
         api.setResult(FAIL);
         api.setCode(code);
         api.setMsg(msg);
@@ -43,8 +43,17 @@ public class ResultApi<T> {
         return api;
     }
 
+    public static <T> ResultApi<T> generateFailMsg(String msg){
+        ResultApi<T> api = new ResultApi<T>();
+        api.setResult(FAIL);
+        api.setCode(FAIL_CODE);
+        api.setMsg(msg);
+        api.setSystemTime(System.currentTimeMillis());
+        return api;
+    }
+
     public static <T> ResultApi<T> generateSuccessMsg(){
-        ResultApi api = new ResultApi();
+        ResultApi<T> api = new ResultApi<T>();
         api.setResult(SUCCESS);
         api.setCode(SUCCESS_CODE);
         api.setMsg("处理成功");
@@ -53,7 +62,7 @@ public class ResultApi<T> {
     }
 
     public static <T> ResultApi<T> generateSuccessMsg(String msg){
-        ResultApi api = new ResultApi();
+        ResultApi<T> api = new ResultApi<T>();
         api.setResult(SUCCESS);
         api.setCode(SUCCESS_CODE);
         api.setMsg(msg);
@@ -62,7 +71,7 @@ public class ResultApi<T> {
     }
 
     public static <T> ResultApi<T> generateFailMsg(int code, String msg, T data){
-        ResultApi api = new ResultApi();
+        ResultApi<T> api = new ResultApi<T>();
         api.setResult(FAIL);
         api.setCode(code);
         api.setMsg(msg);
@@ -72,7 +81,7 @@ public class ResultApi<T> {
     }
 
     public static <T> ResultApi<T> generateSuccessMsg(int code, String msg){
-        ResultApi api = new ResultApi();
+        ResultApi<T> api = new ResultApi<T>();
         api.setResult(SUCCESS);
         api.setCode(code);
         api.setMsg(msg);
@@ -81,7 +90,7 @@ public class ResultApi<T> {
     }
 
     public static <T> ResultApi<T> generateSuccessMsg(T data){
-        ResultApi api = new ResultApi();
+        ResultApi<T> api = new ResultApi<T>();
         api.setResult(SUCCESS);
         api.setCode(SUCCESS_CODE);
         api.setMsg("成功");
@@ -91,7 +100,7 @@ public class ResultApi<T> {
     }
 
     public static <T> ResultApi<T> generateSuccessMsg(int code, String msg, T data){
-        ResultApi api = new ResultApi();
+        ResultApi<T> api = new ResultApi<T>();
         api.setResult(SUCCESS);
         api.setCode(code);
         api.setMsg(msg);
@@ -101,7 +110,7 @@ public class ResultApi<T> {
     }
 
     public static <T> ResultApi<T> generateExceptionMsg(){
-        ResultApi api = new ResultApi();
+        ResultApi<T> api = new ResultApi<T>();
         api.setResult(FAIL);
         api.setCode(EXCEPTION_CODE);
         api.setMsg("后台繁忙，请稍后重试");
@@ -110,7 +119,7 @@ public class ResultApi<T> {
     }
 
     public static <T> ResultApi<T> generateExceptionMsg(String msg){
-        ResultApi api = new ResultApi();
+        ResultApi<T> api = new ResultApi<T>();
         api.setResult(FAIL);
         api.setCode(EXCEPTION_CODE);
         api.setMsg(msg);

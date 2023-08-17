@@ -60,10 +60,10 @@
 		</dependency>
 		<!-- 其他核心工具包 end -->
 
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>javax.servlet</groupId>-->
+<!--			<artifactId>servlet-api</artifactId>-->
+<!--		</dependency>-->
 
 		<!-- Socket通信 S -->
 		<dependency>

@@ -87,4 +87,10 @@ public class FileUtil {
         }
         return null;
     }
+
+    public static void main(String[] args) {
+        File file = new File("D:\\1.jpg");
+        log.info("------" + File.separator);
+        log.info("======" + File.pathSeparator);
+    }
 }

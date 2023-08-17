@@ -1,6 +1,6 @@
 package com.wjysky.file.facade;
 
-import pojo.bo.FIleBO;
+import pojo.bo.FileBO;
 import pojo.vo.UploadFileVO;
 
 import java.util.List;
@@ -14,5 +14,5 @@ import java.util.List;
  */
 public interface IFileFacade {
 
-    List<UploadFileVO> uploadFile(List<FIleBO> fileBOList);
+    List<UploadFileVO> uploadFile(List<FileBO> fileBOList);
 }

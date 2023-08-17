@@ -15,7 +15,9 @@ import java.io.File;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class FIleBO {
+public class FileBO {
+
+    private Integer sn; // 序号，用于确定上传文件的下载路径
 
     private File file;
 
@@ -25,17 +27,20 @@ public class FIleBO {
 
     private String filename;
 
-    public FIleBO(File file, String filename) {
+    public FileBO(Integer sn, File file, String filename) {
+        this.sn = sn;
         this.file = file;
         this.filename = filename;
     }
 
-    public FIleBO(byte[] bytes, String filename) {
+    public FileBO(Integer sn, byte[] bytes, String filename) {
+        this.sn = sn;
         this.bytes = bytes;
         this.filename = filename;
     }
 
-    public FIleBO(String base64, String filename) {
+    public FileBO(Integer sn, String base64, String filename) {
+        this.sn = sn;
         this.base64 = base64;
         this.filename = filename;
     }

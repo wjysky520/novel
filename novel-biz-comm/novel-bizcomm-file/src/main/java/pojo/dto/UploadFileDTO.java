@@ -17,10 +17,10 @@ public class UploadFileDTO extends BaseDTO {
 
     @NotNull(message = "序号不能为空")
     @Min(1)
-    private Integer sn; // 序号
+    private Integer sn; // 序号，用于确定上传文件的下载路径
 
     @NotNull(message = "Base64内容不能为空")
     private String base64; // 文件base64内容
 
-    private String filename; // 文件名称
+    private String filename; // 文件名称，需带上文件后缀
 }

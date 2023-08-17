@@ -1,6 +1,8 @@
 package pojo.vo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @ClassName : UploadFileVO
@@ -9,6 +11,8 @@ import lombok.Data;
  * @Date : 2023-06-09 16:46:35
  */
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class UploadFileVO {
 
     private Integer sn; // 序号

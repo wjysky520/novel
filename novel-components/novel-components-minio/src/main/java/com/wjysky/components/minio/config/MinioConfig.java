@@ -19,14 +19,8 @@ import org.springframework.context.annotation.Configuration;
 @Slf4j
 public class MinioConfig {
 
-    @Bean
+    @Bean(initMethod = "init")
     public MinioUtil minioUtil(MinioProperties properties) {
-        MinioUtil minioUtil = new MinioUtil(properties);
-        try {
-            minioUtil.init();
-        } catch (Exception e) {
-            log.error("Minio存储服务初始化失败", e);
-        }
-        return minioUtil;
+        return new MinioUtil(properties);
     }
 }
