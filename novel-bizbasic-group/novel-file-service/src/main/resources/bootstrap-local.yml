@@ -1,8 +1,8 @@
 server:
   port: 9901
-  name: novel-auth
+  name: novel-file
   servlet:
-    context-path: /novel-auth
+    context-path: /novel-file
 
 eureka:
   instance:
@@ -35,7 +35,7 @@ thread:
       thread-name-prefix: Async-Upload-File-
 
 log:
-  path: D:/logs/novel-auth
+  path: D:/logs/novel-file
 
 file:
   # local-本地存储，minio-minio文件存储服务，oss-阿里云OSS文件存储服务
